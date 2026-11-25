@@ -1,0 +1,5 @@
+# Experimental Windows 2.2091 port candidate — NOT a tested mod
+Original: syzzi CBF 1.5.0 (MIT license retained). Target: Geode 6.0.0, GD 2.2091.
+Old absolute game/Cocos offsets and the ship rotation detour are removed, not relocated. Precision Fix, Physics Bypass, and the old game constant patch are unavailable. Core substep input code remains but the bindings, game variables, timing, and collisions still require verification. Safe Mode defaults on; existing user settings may override it. Do not use for record submissions or verification until validated.
+
+Build attempt: create a private GitHub repository, upload the contents including .github/workflows, enable Actions, and run Build Geode Mod. The existing workflow has been restricted to Windows and pinned to SDK v6.0.0. If compilation succeeds, download Build Output from Actions. Build errors require further source migration. No compiled binary is supplied. Test on a separate game profile; compare with vanilla and the old CBF build before trusting inputs. No compatibility or accuracy guarantees.
